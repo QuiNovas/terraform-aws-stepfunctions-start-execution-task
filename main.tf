@@ -9,11 +9,10 @@ module "stepfunctions_start_execution_task" {
     aws_iam_policy.stepfunctions_start_execution_task.arn,
   ]
 
-  policy_arns_count = 1
   runtime           = "python3.7"
   source            = "QuiNovas/lambdalambdalambda/aws"
   timeout           = 5
-  version           = "0.2.0"
+  version           = "3.0.1"
 }
 
 resource "aws_iam_policy" "stepfunctions_start_execution_task" {
