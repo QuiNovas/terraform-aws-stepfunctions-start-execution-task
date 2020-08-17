@@ -12,7 +12,7 @@ module "stepfunctions_start_execution_task" {
   runtime           = "python3.7"
   source            = "QuiNovas/lambdalambdalambda/aws"
   timeout           = 5
-  version           = "3.0.1"
+  version           = "3.0.2"
 }
 
 resource "aws_iam_policy" "stepfunctions_start_execution_task" {
